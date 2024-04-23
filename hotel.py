@@ -255,7 +255,7 @@ class Hotel:
             # We check that the room is available on the specified date,
             # that it is suitable for capacity and budget.
             if ((room.booking == []) or (order.arrival_date.day >= room.booking[-1].departure_date.day)) and \
-                    (order.quantity == room.capacity * capacity_ratio) and \
+                    (order.quantity == room.capacity + capacity_ratio) and \
                     (order.budget >= room.price * price_ratio):
 
                 # Selection of suitable food.
