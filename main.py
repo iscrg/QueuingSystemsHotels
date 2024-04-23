@@ -72,7 +72,7 @@ for day in range(1, 31):
     general_available = htl.check_general_available(day)
 
     # We display statistics for the day.
-    print(f'{ru_local.BUSY_ROOMS} {general_available["non_available"]}')
+    print(f'\n{ru_local.BUSY_ROOMS} {general_available["non_available"]}')
     print(f'{ru_local.FREE_ROOMS} {general_available["available"]}')
 
     print(ru_local.PERCENT_EACH)
