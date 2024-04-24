@@ -12,7 +12,7 @@ with open('fund.txt', 'r', encoding='utf-8') as f:
         r_num, type, capacity, comfort = line.split()
 
         htl.rooms.append(hotel.Room(type, int(capacity), comfort))
-        htl.count_every_category()
+    htl.count_every_category()
 
 # Reading from the guest reservation file.
 with open('booking.txt', 'r', encoding='utf-8') as f:
